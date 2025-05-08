@@ -65,5 +65,9 @@ public class Player : MonoBehaviour
             Debug.Log(vidaPlayer);
             vidaPlayer -= 20;
         }
+        else if(collider.gameObject.tag == "portal")
+        {
+            SceneManager.LoadScene("Ganhou");
+        }
     }
 }
